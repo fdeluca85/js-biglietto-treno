@@ -5,12 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcolatore prezzo biglietti</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-    <h1>Prezzo del biglietto</h1>
+    <h1>Riepilogo dati</h1>
 
-    <p id="prezzo"></p>
+    <div><p>Per i minori di 18 anni si applica uno sconto del 20%</p>
+    <p>Per le persone di età superiore ai 65 anni si applica uno sconto del 40%</p></div>
+
+    <div class="km">
+        <h3>Km da percorrere:</h3><span id="kilometri"></span>
+        
+    </div>
+    
+
+    <div class="prezzo_tratta">
+        <h3>Prezzo totale sui km :</h3><span id="tratta"></span>
+        
+    </div>
+    <div class="eta_paseggero">
+        <h3>Età del passeggero:</h3> <span id="eta"></span>
+    </div>
+
+
+    <div class="prezzo_biglietto"><h3>Prezzo del biglietto:</h3>
+        <span id="prezzo"></span>
+    </div>
 
     <script src="js/script.js"></script>
 

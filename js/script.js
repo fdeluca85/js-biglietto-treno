@@ -3,18 +3,21 @@
 
 // richiesta Km
 let kilometri = parseFloat(prompt("Inserisci i Km da percorrere"));
-console.log(kilometri);
+document.getElementById("kilometri").innerHTML = kilometri + "km";
+// console.log(kilometri);
 
 
 // richiesta età
 
 let eta = parseInt(prompt("Inserisci la tua età"));
-console.log(eta);
+document.getElementById("eta").innerHTML = eta;
+// console.log(eta);
 
 
 // prezzo tratta
 
 let tratta = (kilometri * ".21");
+document.getElementById("tratta").innerHTML = tratta.toFixed( 2 ) + "€";
 // console.log(tratta);
 
 
@@ -48,4 +51,5 @@ else {
     // console.log (tratta);
     }
 
-    document.getElementById("prezzo").innerHTML = prezzo;
+    document.getElementById("prezzo").innerHTML = prezzo.toFixed( 2 ) + "€";
+    
