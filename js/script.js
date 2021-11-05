@@ -14,15 +14,29 @@ console.log(eta);
 
 // prezzo tratta
 
-let tratta = (kilometri * ".21");
-console.log(tratta);
+// let tratta = (kilometri * ".21");
+// console.log(tratta);
+
 
 
 // sconto minorenni del 20%
-let minorenni = (tratta * '20') / '100';
-console.log(minorenni);
+// let scontominorenni = (tratta * '20') / '100';
+// console.log(scontominorenni);
+
+
+
 
 
 // sconto del 40% per i superiori di 65 anni
-let senior = (tratta * '40') / '100';
-console.log(senior);
+// let scontosenior = (tratta * '40') / '100';
+// console.log(scontosenior);
+
+
+
+if (eta < 18) {
+console.log ('minorenne');
+}
+  
+else if (eta > 65);{
+    console.log ('senior');
+    }
